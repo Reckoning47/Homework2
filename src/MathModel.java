@@ -4,9 +4,8 @@ public abstract class MathModel {
     public MathModel() {
 
     }
-    public void setArray(int arrIn[]) {
-        this.array = arrIn;
-    }
+    public abstract void setArray(int arrIn[]);
     public abstract void display();
     public void performSort() {sm.sort();}
+    public abstract void changeSort();
 }
