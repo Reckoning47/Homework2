@@ -79,10 +79,6 @@ public class MergeSort implements ISortMethod{
         int l = 0;
         int r = arr.length - 1;
         sortRecursive(arr, l, r);
-
-
-
-
     }
 
 }
