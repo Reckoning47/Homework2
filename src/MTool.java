@@ -1,13 +1,13 @@
 import java.util.Scanner;
-public class MyMath extends MathModel {
-    public MyMath(int arr[]) {
+public class MTool extends MathModel {
+    public MTool(int arr[]) {
         array = arr;
-        sm = new BubbleSort(array);
+        sm = new MergeSort(array);
     }
 
     public void setArray(int[] arrIn) {
         array = arrIn;
-        sm = new BubbleSort(array);
+        sm = new MergeSort(array);
     }
 
     public void display()
@@ -28,12 +28,12 @@ public class MyMath extends MathModel {
         Scanner input = new Scanner(System.in);
         selection = input.nextInt();
         if (selection == 1){
-                System.out.println("You have selected BubbleSort!");
-                sm = new BubbleSort(array);
+            System.out.println("You have selected BubbleSort!");
+            sm = new BubbleSort(array);
         }
         else if (selection == 2){
             System.out.println("You have selected MergeSort!");
-            sm = new MergeSort(array);
+            sm = new BubbleSort(array);
         }
         else if (selection == 3){
             System.out.println("You have selected InsertionSort!");
